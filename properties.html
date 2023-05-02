@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy lasad" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header_block">
+          <a class="header_block_logo" href="#">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <ul>
+            <li class="current-menu-item">
+              <a href="https://lasad.github.io/casaverse/">Home</a>
+            </li>
+            <li>
+              <a href="https://lasad.github.io/casaverse/about.html">About Us</a>
+            </li>
+            <li>
+              <a href="https://lasad.github.io/casaverse/properties.html">Properties</a>
+            </li>
+            <li>
+              <a href="https://lasad.github.io/casaverse/neighborhoods.html">Neighborhoods</a>
+            </li>
+            <li>
+              <a href="https://lasad.github.io/casaverse/blog.html">Blog</a>
+            </li>
+          </ul>
+          <div class="header_block_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header_block_right">
+            <a href="#">
+              <span>Contact Us</span>
+            </a>
+          </div>
+        </div>
+        <div class="header_drop">
+          <div class="header_drop_left">
+            <ul>
+              <li class="current-menu-item">
+                <a href="https://lasad.github.io/casaverse/">Home</a>
+              </li>
+              <li>
+                <a href="https://lasad.github.io/casaverse/about.html">About Us</a>
+              </li>
+              <li>
+                <a href="https://lasad.github.io/casaverse/properties.html">Properties</a>
+              </li>
+              <li>
+                <a href="https://lasad.github.io/casaverse/neighborhoods.html">Neighborhoods</a>
+              </li>
+              <li>
+                <a href="https://lasad.github.io/casaverse/blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="about_main about_main_prop anime">
+      <div class="container">
+        <div class="about_main_block">
+          <h2>Featured Properties</h2>
+
+          <svg class="about_anime_mob" width="251" height="10" viewBox="0 0 251 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M250 6.46361C163.359 6.7807 -7.45736 6.52704 2.40972 2.97564C14.7436 -1.4636 276.038 2.02422 230.814 9" stroke="#A5FECB" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+
+          <svg class="about_anime_desk" width="482" height="15" viewBox="0 0 482 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M481 9.87834C313.307 10.3936 -17.3046 9.98142 1.79294 4.21041C25.6649 -3.00335 531.396 2.66435 443.866 14" stroke="#A5FECB" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+
+          <p>Discover our exciting listings and find your next dream home or property investment today</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="properties">
+      <div class="container">
+        <div class="properties_mob_filter">
+          <div class="properties_mob_filter_top">
+            <span>Filter</span>
+            <img src="img/properties/arrow_small.svg" alt="">
+          </div>
+          <div class="properties_mob_filter_body">
+            <div class="properties_mob_filter_body_left">
+              <span class="properties_mob_filter_body_left_name">Price</span>
+              <div id="rangeMob" class="properties_mob_filter_body_left_range"></div>
+              <div class="properties_mob_filter_body_left_price">
+                <span id="mobMin"></span>
+                <span id="mobMax"></span>
+              </div>
+            </div>
+            <div class="properties_mob_filter_body_center">
+              <span class="properties_mob_filter_body_center_name">Properties Type</span>
+              <div class="properties_mob_filter_body_center_list">
+                <label>All
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label>Sale
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label>Rent
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="properties_mob_filter_body_right">
+              <span class="properties_mob_filter_body_right_name">Location</span>
+              <select name="" id="">
+                <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+                <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+                <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+                <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+                <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+                <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="properties_filter">
+          <div class="properties_filter_left">
+            <span class="properties_filter_left_name">Price</span>
+            <div id="range" class="properties_filter_left_range"></div>
+            <div class="properties_filter_left_price">
+              <span id="deskMin"></span>
+              <span id="deskMax"></span>
+            </div>
+          </div>
+          <div class="properties_filter_center">
+            <span class="properties_filter_center_name">Properties Type</span>
+            <div class="properties_filter_center_list">
+              <label>All
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <label>Sale
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <label>Rent
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="properties_filter_right">
+            <span class="properties_filter_right_name">Location</span>
+            <select name="" id="">
+              <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+              <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+              <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+              <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+              <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+              <option value="Downtown Burj Khalifa">Downtown Burj Khalifa</option>
+            </select>
+          </div>
+        </div>
+        <div class="properties_block">
+
+          <a class="properties_block_item" href="https://lasad.github.io/casaverse/properties_single.html">
+            <div class="properties_block_item_img">
+              <img src="img/neighborhoods_single/1.png" alt="">
+              <div class="properties_block_item_img_info">
+                <span>FOR SALE</span>
+              </div>
+            </div>
+            <div class="properties_block_item_mob">
+              <h4>Apartment</h4>
+              <p>Lorem ipsum dolor sit amet, elit consectetur adipiscing elit...</p>
+              <span class="properties_block_item_mob_price">$55,999</span>
+              <div class="properties_block_item_mob_details">
+                <div class="properties_block_item_mob_details_left">
+                  <div class="properties_block_item_mob_details_left_line"></div>
+                  <span>details</span>
+                </div>
+                <div class="properties_block_item_mob_details_right">
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties_block_item_desk">
+              <div class="properties_block_item_desk_top">
+                <h3>Apartment</h3>
+                <div class="properties_block_item_desk_top_info">
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                  <span class="properties_block_item_desk_top_info_price">$55,999</span>
+                </div>
+              </div>
+              <div class="properties_block_item_desk_bottom">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <div class="properties_block_item_desk_bottom_btn">
+                  <div class="properties_block_item_desk_bottom_btn_line"></div>
+                  <span>details</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="properties_block_item" href="https://lasad.github.io/casaverse/properties_single.html">
+            <div class="properties_block_item_img">
+              <img src="img/neighborhoods_single/2.png" alt="">
+              <div class="properties_block_item_img_info">
+                <span>FOR SALE</span>
+              </div>
+            </div>
+            <div class="properties_block_item_mob">
+              <h4>Apartment</h4>
+              <p>Lorem ipsum dolor sit amet, elit consectetur adipiscing elit...</p>
+              <span class="properties_block_item_mob_price">$55,999</span>
+              <div class="properties_block_item_mob_details">
+                <div class="properties_block_item_mob_details_left">
+                  <div class="properties_block_item_mob_details_left_line"></div>
+                  <span>details</span>
+                </div>
+                <div class="properties_block_item_mob_details_right">
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties_block_item_desk">
+              <div class="properties_block_item_desk_top">
+                <h3>Apartment</h3>
+                <div class="properties_block_item_desk_top_info">
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                  <span class="properties_block_item_desk_top_info_price">$55,999</span>
+                </div>
+              </div>
+              <div class="properties_block_item_desk_bottom">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <div class="properties_block_item_desk_bottom_btn">
+                  <div class="properties_block_item_desk_bottom_btn_line"></div>
+                  <span>details</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="properties_block_item" href="https://lasad.github.io/casaverse/properties_single.html">
+            <div class="properties_block_item_img">
+              <img src="img/neighborhoods_single/3.png" alt="">
+              <div class="properties_block_item_img_info">
+                <span>FOR SALE</span>
+              </div>
+            </div>
+            <div class="properties_block_item_mob">
+              <h4>Apartment</h4>
+              <p>Lorem ipsum dolor sit amet, elit consectetur adipiscing elit...</p>
+              <span class="properties_block_item_mob_price">$55,999</span>
+              <div class="properties_block_item_mob_details">
+                <div class="properties_block_item_mob_details_left">
+                  <div class="properties_block_item_mob_details_left_line"></div>
+                  <span>details</span>
+                </div>
+                <div class="properties_block_item_mob_details_right">
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties_block_item_desk">
+              <div class="properties_block_item_desk_top">
+                <h3>Apartment</h3>
+                <div class="properties_block_item_desk_top_info">
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                  <span class="properties_block_item_desk_top_info_price">$55,999</span>
+                </div>
+              </div>
+              <div class="properties_block_item_desk_bottom">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <div class="properties_block_item_desk_bottom_btn">
+                  <div class="properties_block_item_desk_bottom_btn_line"></div>
+                  <span>details</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="properties_block_item" href="https://lasad.github.io/casaverse/properties_single.html">
+            <div class="properties_block_item_img">
+              <img src="img/neighborhoods_single/1.png" alt="">
+              <div class="properties_block_item_img_info">
+                <span>FOR SALE</span>
+              </div>
+            </div>
+            <div class="properties_block_item_mob">
+              <h4>Apartment</h4>
+              <p>Lorem ipsum dolor sit amet, elit consectetur adipiscing elit...</p>
+              <span class="properties_block_item_mob_price">$55,999</span>
+              <div class="properties_block_item_mob_details">
+                <div class="properties_block_item_mob_details_left">
+                  <div class="properties_block_item_mob_details_left_line"></div>
+                  <span>details</span>
+                </div>
+                <div class="properties_block_item_mob_details_right">
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties_block_item_desk">
+              <div class="properties_block_item_desk_top">
+                <h3>Apartment</h3>
+                <div class="properties_block_item_desk_top_info">
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                  <span class="properties_block_item_desk_top_info_price">$55,999</span>
+                </div>
+              </div>
+              <div class="properties_block_item_desk_bottom">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <div class="properties_block_item_desk_bottom_btn">
+                  <div class="properties_block_item_desk_bottom_btn_line"></div>
+                  <span>details</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="properties_block_item" href="https://lasad.github.io/casaverse/properties_single.html">
+            <div class="properties_block_item_img">
+              <img src="img/neighborhoods_single/2.png" alt="">
+              <div class="properties_block_item_img_info">
+                <span>FOR SALE</span>
+              </div>
+            </div>
+            <div class="properties_block_item_mob">
+              <h4>Apartment</h4>
+              <p>Lorem ipsum dolor sit amet, elit consectetur adipiscing elit...</p>
+              <span class="properties_block_item_mob_price">$55,999</span>
+              <div class="properties_block_item_mob_details">
+                <div class="properties_block_item_mob_details_left">
+                  <div class="properties_block_item_mob_details_left_line"></div>
+                  <span>details</span>
+                </div>
+                <div class="properties_block_item_mob_details_right">
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties_block_item_desk">
+              <div class="properties_block_item_desk_top">
+                <h3>Apartment</h3>
+                <div class="properties_block_item_desk_top_info">
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                  <span class="properties_block_item_desk_top_info_price">$55,999</span>
+                </div>
+              </div>
+              <div class="properties_block_item_desk_bottom">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <div class="properties_block_item_desk_bottom_btn">
+                  <div class="properties_block_item_desk_bottom_btn_line"></div>
+                  <span>details</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="properties_block_item" href="https://lasad.github.io/casaverse/properties_single.html">
+            <div class="properties_block_item_img">
+              <img src="img/neighborhoods_single/3.png" alt="">
+              <div class="properties_block_item_img_info">
+                <span>FOR SALE</span>
+              </div>
+            </div>
+            <div class="properties_block_item_mob">
+              <h4>Apartment</h4>
+              <p>Lorem ipsum dolor sit amet, elit consectetur adipiscing elit...</p>
+              <span class="properties_block_item_mob_price">$55,999</span>
+              <div class="properties_block_item_mob_details">
+                <div class="properties_block_item_mob_details_left">
+                  <div class="properties_block_item_mob_details_left_line"></div>
+                  <span>details</span>
+                </div>
+                <div class="properties_block_item_mob_details_right">
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_mob_details_right_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="properties_block_item_desk">
+              <div class="properties_block_item_desk_top">
+                <h3>Apartment</h3>
+                <div class="properties_block_item_desk_top_info">
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bed.svg" alt="">
+                    <span>3</span>
+                  </div>
+                  <div class="properties_block_item_desk_top_info_wrap">
+                    <img src="img/properties/bath.svg" alt="">
+                    <span>2</span>
+                  </div>
+                  <span class="properties_block_item_desk_top_info_price">$55,999</span>
+                </div>
+              </div>
+              <div class="properties_block_item_desk_bottom">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <div class="properties_block_item_desk_bottom_btn">
+                  <div class="properties_block_item_desk_bottom_btn_line"></div>
+                  <span>details</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_block">
+          <div class="footer_block_left">
+            <a href="#">
+              <img src="img/footer/logo.svg" alt="">
+            </a>
+            <p>Casaverse is dedicated to representing properties of unparalleled distinction in Dubai. With a deep understanding of the local market and years of experience, we have been able to cater to the unique needs of our clients and help them find their dream properties. Whether you're looking to buy, sell, or rent a property, Casaverse is here to help you every step of the way.</p>
+            <div class="footer_block_left_social">
+              <a href="#">
+                <img src="img/footer/instagram.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/tiktok.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/youtube.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/facebook.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/twitter.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/linked.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footer_block_mid">
+            <h3>Contact Us</h3>
+            <div class="footer_block_mid_link">
+              <a href="tel:+971586341110">+971 58 634 1110</a>
+              <a href="mailto:info@casa-verse.com">info@casa-verse.com</a>
+            </div>
+            <p>1302, The One Tower, Barsha Heights Dubai, United Arab Emirates</p>
+          </div>
+          <div class="footer_block_right">
+            <h3>Location</h3>
+            <iframe width="100%" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer_under">
+      <div class="container">
+        <div class="footer_under_block">
+          <div class="footer_under_block_left">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="footer_under_block_right">
+            <p>2023. Casaverse. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/nouislider.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
+
+<script>
+  var slider = document.getElementById('range');
+
+  noUiSlider.create(slider, {
+    start: [50000, 1000000],
+    connect: true,
+    step: 5000,
+    range: {
+      'min': 55000,
+      'max': 1000000
+    }
+  });
+
+  var paddingMin = document.getElementById('deskMin');
+  var paddingMax = document.getElementById('deskMax');
+
+  slider.noUiSlider.on('update', function (values, handle) {
+    if (handle) {
+      var num_one = values[handle].slice(0,-3);
+      paddingMax.innerHTML = num_one;
+    } else {
+      var num_two = values[handle].slice(0,-3);
+      paddingMin.innerHTML = num_two;
+    }
+  });
+</script>
+
+<script>
+
+  var sliderMob = document.getElementById('rangeMob');
+
+  noUiSlider.create(sliderMob, {
+    start: [50000, 1000000],
+    connect: true,
+    step: 5000,
+    range: {
+      'min': 55000,
+      'max': 1000000
+    }
+  });
+
+  var paddingMinMob = document.getElementById('mobMin');
+  var paddingMaxMob = document.getElementById('mobMax');
+
+  sliderMob.noUiSlider.on('update', function (values, handle) {
+    if (handle) {
+      var num_one = values[handle].slice(0,-3);
+      paddingMaxMob.innerHTML = num_one;
+    } else {
+      var num_two = values[handle].slice(0,-3);
+      paddingMinMob.innerHTML = num_two;
+    }
+  });
+
+</script>
+
+<script>
+  $("select").niceSelect();
+</script>
